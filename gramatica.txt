@@ -1,0 +1,13 @@
+Programa -> Declaración*
+Declaración -> DeclaraciónFunción | DeclaraciónVariable | Expresión;
+DeclaraciónFunción -> function Identificador ( Parámetros ) { Cuerpo }
+Parámetros -> Identificador ,* Identificador*
+Cuerpo -> Declaración*
+DeclaraciónVariable -> (var | let | const) Identificador (= Expresión)?
+Expresión -> Término (Operador Término)*
+Término -> Factor (Operador Factor)*
+Factor -> Identificador | Número | Cadena | ( Expresión )
+Identificador -> [a-zA-Z_][a-zA-Z0-9_]*
+Número -> [0-9]+(\.[0-9]+)?
+Cadena -> ".*?" | '.*?'
+Operador -> + | - | * | / | = 

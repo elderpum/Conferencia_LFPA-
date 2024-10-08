@@ -1,0 +1,7 @@
+function sumar(a, b) {
+    var resultado = a + b;
+    return resultado;
+}
+
+let mensaje = "Hola, Mundo!";
+const PI = 3.1416;
